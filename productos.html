@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Productos - Peluquería Alura</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/productos.css"/>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    </head>
+
+    <body>
+
+        <!--TODO: INICIO DEL HEADER-->
+        <header>
+
+            <div class="caja">
+                <a href="index.html" class="titulo-principal">Peluquería Alura</a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="index.html#encuentranos">Encuentranos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+        <!--FINAL DEL HEADER-->
+
+        <main>
+
+            <!--TODO: INICIO DE LA SECCIÓN DE PRODUCTOS-->
+            <section class="seccion-productos">
+
+                <ul class="productos">
+                    <div class="contenedor-productos">
+                
+                        <li>
+                            <h2>Corte + estilizado</h2>
+                            <img src="img/CorteEstilizado.jpg" alt="Corde de cabello">
+                            <p class="producto-descripcion">
+                                Corte para cabello de todas las texturas y tipos, contamos con profesionales expertos en cabellos lacios y rizados, y con un amplio catálogo de estilos que se adaptan a las necesidades y preferencias de nuestras clientes. El precio varia segun el largo del cabello. El servicio incluye lavado, corte, secado y estilizado (Secador, plancha, rizadora, técnicas detangler, fitagem o pelo a pelo en caso de tener el cabello rizado).
+                            </p>
+                            <p class="producto-variacion">Cabello corto:</p>
+                            <p class="producto-precio">$15.00</p>
+                            <p class="producto-variacion">Cabello medio:</p>
+                            <p class="producto-precio">$20.00</p>
+                            <p class="producto-variacion">Cabello largo:</p>
+                            <p class="producto-precio">$25.00</p>
+                        </li>
+                
+                        <li>
+                            <h2>Peinados de ocasión</h2>
+                            <img src="img/PeinadosOcasion.jpg" alt="Peinado de ocasión">
+                            <p class="producto-descripcion">
+                                Peinados para boda, graduación, galas, eventos, y demás celebraciones, nuestro catálogo se amplia a todos los rangos de edad. El precio varia si nuestras clientes desean incluír el servicio de maquillaje. El servicio incluye lavado, secado y posteriormente, el peinado a elección de nuestras clientes.
+                            </p>
+                            <p class="producto-variacion">Peinado:</p>
+                            <p class="producto-precio">$25.00</p>
+                            <p class="producto-variacion">Peinado + maquillaje:</p>
+                            <p class="producto-precio">$35.00</p>
+                        </li>
+                
+                        <li>
+                            <h2>Tinte + estilizado</h2>
+                            <img src="img/TinteEstilizado.jpg" alt="Tinte + Estilizado">
+                            <p class="producto-descripcion">
+                                Tenemos una amplia gama de colores, desde los naturales hasta los fantasía. Gracias a nuestra técnica hexagecimal y RGB, podemos satisfacer los deseos de nuestras clientas y aumentar o disminuir la intensidad del color de forma personalizada. Con el servicio viene incluído el estilizado luego de la aplicación del tinte, lavado y secado del cabello. El precio varia según el largo del cabello.
+                            </p>
+                            <p class="producto-variacion">Cabello corto:</p>
+                            <p class="producto-precio">$20.00</p>
+                            <p class="producto-variacion">Cabello medio:</p>
+                            <p class="producto-precio">$30.00</p>
+                            <p class="producto-variacion">Cabello largo:</p>
+                            <p class="producto-precio">$40.00</p>
+                        </li>
+                
+                    </div>
+                </ul>
+
+            </section>
+            <!--FINAL DE LA SECCIÓN DE PRODUCTOS-->
+
+            <!--TODO: INICIO DE LA SECCIÓN DE CONTACTO-->
+            <section class="seccion-contacto" id="contacto">
+                
+                <form action="">
+
+                    <fieldset>
+                        <legend class="contactanos">Contáctanos</legend>
+                        
+                        <label for="nombreapellido">Nombre y apellido</label>
+                        <input class="input-padron" type="text" id="nombreapellido" required>
+                        
+                        <label for="correoelectronico">Correo electrónico</label>
+                        <input class="input-padron" type="email" id="correoelectronico" placeholder="email@dominio.com" required>
+                        
+                        <label for="telefono">Teléfono</label>
+                        <input class="input-padron" type="tel" id="telefono" placeholder="(xx) xxx xxx xxxx" required>
+                        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" cols="74" rows="5" required></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        
+                        <legend class="tipo-contacto">¿Cómo le gustaría que lo contactemos?</legend>
+    
+                        <label class="label-seleccion" for="radio-email"><input class="input-seleccion" type="radio" value="email" id="radio-email" name="contacto" checked>Correo electrónico</label>
+
+                        <label class="label-seleccion" for="radio-telefono"><input class="input-seleccion" type="radio" value="telefono" id="radio-telefono" name="contacto">Teléfono</label>
+                        
+                        <label class="label-seleccion" for="radio-whatsapp"><input class="input-seleccion" type="radio" value="whatsapp" id="radio-whatsapp" name="contacto">WhatsApp</label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend class="tipo-contacto">¿En cuál horario prefiere ser contactado?</legend>
+                        <div class="contenedor-select">
+                            <select class="horario-atencion">
+                                <option>Mañana: 08:00am - 11:30am</option>
+                                <option>Tarde: 13:00pm - 17:30pm</option>
+                                <option>Noche: 19:00pm - 21:30pm</option>
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                    <p class="tipo-contacto"><input class="input-seleccion" type="checkbox" checked>¿Le gustaría recibir novedades de la Peluquería Alura?</p>
+
+                    <div class="contenedor-boton">
+                        <input class="enviar-formulario" type="submit" value="Enviar formulario">
+                    </div>
+                </form>
+            </section>
+            <!--FINAL DE LA SECCIÓN DE CONTACTO-->
+
+        </main>
+        
+        <!--TODO: INICIO DEL FOOTER-->
+        <footer>
+            <div class="follow">
+                <a href="https://www.linkedin.com/in/ansoloes0320/" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://github.com/ansoloes" target="_blank" class="fab fa-github"></a>
+            </div>
+            <div class="copyright">&#169Copyright <a href="https://www.aluracursos.com/" target="_blank">Sofia Lozano - Peluquería Alura</a> | 2023</div>
+        </footer>
+        <!--FINAL DEL FOOTER-->
+
+    </body>
+
+</html>

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Quicksand:wght@300;400;500;600&display=swap');
+
+body {
+
+    font-family: 'Quicksand', sans-serif;
+    background: #F9F5EB;
+
+}
+
+/*INICIO CONDENEDOR PRODUCTOS*/
+.contenedor-productos{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.productos {
+
+    width: 100%;
+    padding: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.productos li {
+
+    display: inline-block;
+    vertical-align: top;
+    background-color: #002B5B;
+    border-radius: .5rem;
+    text-align: center;
+    width: 24%;
+    margin: 0 1.5%;
+    cursor: pointer;
+    box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.035),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.05),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.065),
+    100px 100px 80px rgba(0, 0, 0, 0.1);
+
+}
+
+.productos li:hover {
+
+    border: 3px solid #EA5455;
+    
+}
+
+.productos li:active {
+
+    border: 3px solid #7190b3;
+    box-shadow: none;
+
+}
+
+img {
+    
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: .5s;
+
+}
+
+img:hover {
+
+    opacity: 70%;
+
+}
+
+.productos h2 {
+
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F9F5EB;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.producto-descripcion {
+
+    color: #F9F5EB;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+.producto-variacion {
+
+    color: #EA5455;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.producto-precio {
+
+    color: #F9F5EB;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+/*FINAL CONDENEDOR PRODUCTOS*/
+
+/*INICIO SECCION CONTACTO*/
+.seccion-contacto {
+
+    background: url(../img/contacto.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 80vh;
+    background-position: center;
+    display: grid;
+    place-items: center;
+
+
+}
+
+form {
+
+    padding: 20px;
+    background: #F9F5EB;
+    border-radius: .5rem;
+    width: 40%;
+    height: 70;
+    margin: 0 auto;
+    box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.035),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.05),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.065),
+    100px 100px 80px rgba(0, 0, 0, 0.1);
+
+}
+
+.contactanos {
+
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+form label {
+
+    display: block;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.input-padron {
+
+    display: block;
+    background: #a8c0db;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: .5rem;
+
+
+}
+
+textarea {
+
+    background: #a8c0db;
+    font-family: 'Quicksand', sans-serif;
+    resize: none;
+    border: none;
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 20px;
+
+}
+
+.tipo-contacto {
+
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.label-seleccion {
+
+    font-size: 15px;
+    margin: 0%;
+
+}
+
+.input-seleccion {
+
+    height: 13px;
+    margin-bottom: 15px;
+
+}
+
+.contenedor-select {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+select {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 30px;
+    border-radius: .5rem;
+
+}
+
+.contenedor-boton {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.enviar-formulario {
+
+    background: #002B5B;
+    color: #F9F5EB;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s background;
+
+}
+
+.enviar-formulario:hover {
+
+    background: #EA5455;
+
+}
+/*FINAL SECCION CONTACTO*/
+
+
